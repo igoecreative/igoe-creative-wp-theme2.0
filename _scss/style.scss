@@ -1,0 +1,357 @@
+/*
+	Theme Name: Igoe Creative
+	Theme URI:
+	Description:  Blank Wordpress Website template. Bare Bones, ready for some styling.
+	Version: 4.0
+	Author: Igoe Creative - Sarah Himmler (@igoecreative)
+	Author URI: https://www.goigoecreative.com
+	Tags: HTML5, SCSS, CSS, PHP, JS, Angular JS, jQuery, Bootstrap 4, Responsive, Mobile First, Mobile Ready
+*/
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+// All the colors
+$black: rgba(0,0,0,1);
+$white: rgba(255,255,255,1);
+$dark-grey: #585858;
+$light-grey: #e1e1e1;
+$grey: #aaaaaa;
+$red: #e02125;
+$blue: #3266A2;
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+$open: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+
+/*----------------GENERAL------------------*/
+
+/* global box-sizing */
+*,*:after,*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+body {
+	font-weight:400;
+	font-size: 15px;
+	font-family: $open;
+	color:$grey;
+	margin: 0;
+}
+p{
+	font-weight:400;
+	font-size: 15px;
+	font-family: $open;
+	color:$grey;
+	margin: 7px 0 10px;
+}
+.clear {
+	*zoom:1;
+	&:before,&:after{
+		content:' ';
+		display:table;
+	}
+}
+a {
+	color:$grey;
+	text-decoration:none;
+	background: transparent;
+	&:hover,&:focus,&:active {
+		color:$grey;
+		font-style: italic;
+		text-decoration:underline;
+	}
+}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+	color:$grey;
+	font-weight: 700;
+	margin: 10px 0;
+}
+h1,.h1{
+	font-size: 28px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 30px;
+	}
+	@media (min-width:$screen-md-min) {
+		font-size: 32px;
+	}
+}
+h2,.h2{
+	font-size: 22px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 24px;
+	}
+	@media (min-width:$screen-md-min) {
+		font-size: 26px;
+	}
+}
+h3,.h3{
+	font-size: 20px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 22px;
+	}
+	@media (min-width:$screen-md-min) {
+		font-size: 24px;
+	}
+}
+h4,.h4{
+	font-size: 18px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 20px;
+	}
+}
+h5,.h5{
+	font-size: 16px;
+	@media (min-width:$screen-sm-min) {
+		font-size: 18px;
+	}
+}
+h6,.h6{
+	font-size: 15px;
+}
+.margins {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @media (min-width:$screen-sm) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $screen-md) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.small_margins {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @media (min-width:$screen-sm) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.btn-igoe{
+	text-transform: uppercase !important;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	padding: 8px 0;
+  width: 150px;
+	border: 2px solid $grey;
+	color: $grey !important;
+	background-color: $white;
+	border-radius: 0px;
+	letter-spacing: .45px;
+	margin-bottom: 15px;
+	&:hover, &:focus,&:active{
+		color: $white !important;
+		border: 2px solid $grey;
+		background-color: $grey;
+	}
+}
+.white-text{
+	color: $white!important;
+	p,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+		color: $white!important;
+	}
+	a{
+		color: $white!important;
+		&:hover, &:focus,&:active{
+			color: $white!important;
+			text-decoration: underline;
+		}
+	}
+}
+/*-------------HEADER--------------*/
+
+.header {
+	.logo {
+		img{
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+	.social_link{
+		.fa{
+			color: $grey;
+		}
+		&:hover,&:focus,&:active{
+			text-decoration:none !important;
+			.fa{
+				color: $black;
+				text-decoration:none;
+			}
+		}
+	}
+	#nav {
+		.navbar-default{
+			background-color: transparent !important;
+			border-color: transparent !important;
+			margin-bottom: 0;
+			.navbar-header{
+				float:none;
+				.navbar-toggle{
+					.icon-bar{
+
+					}
+				}
+			}
+			.navbar-nav>.active>a,.navbar-nav>.active>a:focus,.navbar-nav>.active>a:hover {
+				color: $black !important;
+				background-color: transparent !important;
+				text-decoration:underline !important;
+			}
+			.collapse{
+				.nav.navbar-nav{
+					float:none;
+					li{
+						a{
+							color: $black;
+							&:hover,&:focus,&:active{
+								color: $grey;
+								text-decoration:underline;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.dropdown-menu>.active>a,
+	.dropdown-menu>.active>a:focus,
+	.dropdown-menu>.active>a:hover{
+	  background-color: $grey !important;
+	}
+}
+.navbar{//centering navbar
+	.navbar-nav {
+	  display: inline-block;
+	  float: none;
+	  vertical-align: top;
+		.navbar-collapse {
+		  text-align: center;
+		}
+	}
+}
+/*--------------PAGES---------------*/
+.attachment-post-thumbnail{
+	&.size-post-thumbnail{
+		&.wp-post-image{
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+	}
+}
+
+/*-----------CONTACT FORM------------*/
+.wpcf7{
+	.col-xs-12{
+		input{
+			width: 100%;
+			margin: 10px 0px;
+			padding: 10px;
+			border: $grey 2px solid;
+		}
+		textarea{
+			width: 100%;
+	    height: 165px;
+			padding: 10px;
+			margin: 10px 0px;
+			border: $grey 2px solid;
+		}
+	}
+	.wpcf7-submit,.reset {
+		border: $grey 2px solid !important;
+		width: 100px !important;
+		margin: 10px 15px;
+		color: $grey;
+		background-color: $white;
+		@media (min-width: $screen-sm-min) {
+			width: 150px !important;
+		}
+		&:hover,&:focus,&:active{
+			border: $grey 2px solid !important;
+			color: $grey;
+		}
+	}
+	.submit{
+		display: inline-flex;
+		margin-bottom: 30px;
+	}
+}
+
+/*------------WORDPRESS CORE------------*/
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+b,strong,.bold {font-weight: 700;}
+.caps{text-transform: uppercase;}
+.alignnone {margin:5px 20px 20px 0;}
+.strikethrough{text-decoration: line-through;}
+.aligncenter {
+	display:block;
+	margin:0px auto;
+	text-align: center;
+	p,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+		text-align: center;
+	}
+	img{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+.no-top-margin{
+	margin-top: 0!important;
+}
+
+/*--------------SIDEBAR-------------------*/
+.sidebar {
+
+}
+
+/*-------------FOOTER----------------*/
+.footer {
+
+}
