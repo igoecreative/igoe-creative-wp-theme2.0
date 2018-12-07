@@ -285,7 +285,7 @@ function igoeCustomComments($comment, $args, $depth)
 function my_login_logo_one() {  ?>
   <style type="text/css">
     body.login div#login h1 a {
-      background-image: url(/wordpress/wp-content/themes/igoe-creative/img/gravatar.png);
+      background-image: url(/wordpress/wp-content/themes/igoe-creative-new/img/gravatar.png);
       padding-bottom: 30px;
     }
   </style>
