@@ -91,17 +91,13 @@ h6, .h6 { font-size: 15px; }
 
 .header .dropdown-menu > .active > a, .header .dropdown-menu > .active > a:focus, .header .dropdown-menu > .active > a:hover { background-color: #aaaaaa !important; }
 
-.navbar .navbar-nav { display: inline-block; float: none; vertical-align: top; }
-
-.navbar .navbar-nav .navbar-collapse { text-align: center; }
-
 /*--------------PAGES---------------*/
 .attachment-post-thumbnail.size-post-thumbnail.wp-post-image { margin-left: auto; margin-right: auto; width: 100%; }
 
 /*-----------CONTACT FORM------------*/
-.wpcf7 .col-xs-12 input { width: 100%; margin: 10px 0px; padding: 10px; border: #aaaaaa 2px solid; }
+.wpcf7 .col-12 input { width: 100%; margin: 10px 0px; padding: 10px; border: #aaaaaa 2px solid; }
 
-.wpcf7 .col-xs-12 textarea { width: 100%; height: 165px; padding: 10px; margin: 10px 0px; border: #aaaaaa 2px solid; }
+.wpcf7 .col-12 textarea { width: 100%; height: 165px; padding: 10px; margin: 10px 0px; border: #aaaaaa 2px solid; }
 
 .wpcf7 .wpcf7-submit, .wpcf7 .reset { border: #aaaaaa 2px solid !important; width: 100px !important; margin: 10px 15px; color: #aaaaaa; background-color: white; }
 
@@ -118,15 +114,7 @@ b, strong, .bold { font-weight: 700; }
 
 .caps { text-transform: uppercase; }
 
-.alignnone { margin: 5px 20px 20px 0; }
-
 .strikethrough { text-decoration: line-through; }
-
-.aligncenter { display: block; margin: 0px auto; text-align: center; }
-
-.aligncenter p, .aligncenter h1, .aligncenter h2, .aligncenter h3, .aligncenter h4, .aligncenter h5, .aligncenter h6, .aligncenter .h1, .aligncenter .h2, .aligncenter .h3, .aligncenter .h4, .aligncenter .h5, .aligncenter .h6 { text-align: center; }
-
-.aligncenter img { display: block; margin-left: auto; margin-right: auto; }
 
 .no-top-margin { margin-top: 0 !important; }
 
