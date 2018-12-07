@@ -43,13 +43,13 @@
 							<div class="col-12 col-sm-6 social">
 								<div class="header_social pull-right">
 									<a class="social_link" href="" target="_blank">
-										<i class="fa fa-facebook-official social_img" aria-hidden="true"></i>
+										<i class="fab fa-facebook"></i>
 									</a>
 									<a class="social_link" href="" target="_blank">
-										<i class="fa fa-pinterest-square social_img" aria-hidden="true"></i>
+										<i class="fab fa-twitter-square"></i>
 									</a>
 									<a class="social_link" href="" target="_blank">
-										<i class="fa fa-instagram social_img" aria-hidden="true"></i>
+										<i class="fab fa-instagram"></i>
 									</a>
 								</div>
 							</div>
