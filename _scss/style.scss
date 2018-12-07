@@ -227,9 +227,8 @@ h6,.h6{
 			margin-bottom: 0;
 			.navbar-header{
 				float:none;
-				.navbar-toggle{
-					.icon-bar{
-
+				.navbar-toggler{
+					.navbar-toggler-icon{
 					}
 				}
 			}
@@ -259,31 +258,30 @@ h6,.h6{
 	.dropdown-menu>.active>a:hover{
 	  background-color: $grey !important;
 	}
-}
-.navbar{//centering navbar
-	.navbar-nav {
-	  display: inline-block;
-	  float: none;
-	  vertical-align: top;
-		.navbar-collapse {
-		  text-align: center;
-		}
-	}
-}
-/*--------------PAGES---------------*/
-.attachment-post-thumbnail{
-	&.size-post-thumbnail{
-		&.wp-post-image{
-			margin-left: auto;
-			margin-right: auto;
-			width: 100%;
-		}
-	}
+	//Not sure if following is in bootstrap 4. Need to check next build.
+	// .navbar{//centering navbar
+	// 	.navbar-nav {
+	// 	  display: inline-block;
+	// 	  float: none;
+	// 	  vertical-align: top;
+	// 		.navbar-collapse {
+	// 		  text-align: center;
+	// 		}
+	// 	}
+	// }
 }
 
+/*--------------PAGES---------------*/
+
+
+.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
 /*-----------CONTACT FORM------------*/
 .wpcf7{
-	.col-xs-12{
+	.col-12{
 		input{
 			width: 100%;
 			margin: 10px 0px;
@@ -326,21 +324,7 @@ hr {
 }
 b,strong,.bold {font-weight: 700;}
 .caps{text-transform: uppercase;}
-.alignnone {margin:5px 20px 20px 0;}
 .strikethrough{text-decoration: line-through;}
-.aligncenter {
-	display:block;
-	margin:0px auto;
-	text-align: center;
-	p,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-		text-align: center;
-	}
-	img{
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-}
 
 .no-top-margin{
 	margin-top: 0!important;
