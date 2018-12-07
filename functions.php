@@ -1,7 +1,7 @@
 <?php
 /*
  *  Author: Igoe Creative - Sarah Himmler | @igoecreative
- *  URL: https://goigoecreative.com | @igoecreative
+ *  URL: https://www.goigoecreative.com | @igoecreative
  */
 
 /***********************************\
