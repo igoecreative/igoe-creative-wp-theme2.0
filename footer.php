@@ -4,7 +4,7 @@
 						<div class="col-12">
 							<div class="copyright">
 								&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
-								Powered by <a href="https://goigoecreative.com" target="_blank" title="Igoe Creative">Igoe Creative</a>.
+								Powered by <a href="https://www.goigoecreative.com" target="_blank" title="Igoe Creative">Igoe Creative</a>.
 							</div>
 						</div>
 					</div>
