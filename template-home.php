@@ -1,5 +1,6 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
+<div class="home page">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="feat_img home aligncenter">
@@ -31,6 +32,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
