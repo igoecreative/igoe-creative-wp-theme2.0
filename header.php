@@ -37,7 +37,7 @@
 						<div class="row">
 							<div class="col-12 col-sm-6 logo">
 								<a href="<?php echo home_url(); ?>">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="img-responsive logo-img">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="img-fluid logo-img">
 								</a>
 							</div>
 							<div class="col-12 col-sm-6 social">
