@@ -27,7 +27,7 @@
 						<?php the_content();?>
 
 						<p><?php the_tags( __('Tags: ', 'igoecreative' ), ', ', '<br>');?></p>
-						<p><?php _e( 'Categorised in: ', 'igoecreative' ); the_category(', '); ?></p>
+						<p><?php _e( 'Categories in: ', 'igoecreative' ); the_category(', '); ?></p>
 
 						<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'igoecreative' ), __( '1 Comment', 'igoecreative' ), __( '% Comments', 'igoecreative'  )); ?></span>
 						<?php comments_template(); ?>
