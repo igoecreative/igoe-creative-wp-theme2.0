@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<div class="index blog">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="feat_img home">
@@ -51,6 +52,7 @@
 			</section>
 		</div>
 	</div>
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
