@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<div class="default page">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="feat_img aligncenter">
@@ -31,6 +32,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
