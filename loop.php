@@ -2,19 +2,21 @@
 
 	<article class="article loop">
 
-		<?php if ( has_post_thumbnail()) :?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail(array(120,120)); // Declare img size in pixels you need inside the array ?>
-			</a>
-		<?php endif; ?>
+		<div class="media">
+			<?php if ( has_post_thumbnail()) :?>
+				<a class="d-none d-sm-block" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<?php the_post_thumbnail(array(120,120)); ?>
+				</a>
+			<?php endif; ?>
 
-		<h2>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-		</h2>
+			<div class="media-body">
+				<h2 class="no-top-margin"><a class="mt-0" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
-		<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-		<span class="author"><?php _e( 'Published by', 'igoecreative' ); ?> <?php the_author_posts_link(); ?></span>
-		<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'igoecreative' ), __( '1 Comment', 'igoecreative' ), __( '% Comments', 'igoecreative' )); ?></span>
+				<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span> – <span class="author"><?php _e( 'Published by', 'silverline' ); ?> <?php the_author_posts_link(); ?></span>
+				<p><?php the_excerpt(); ?></p>
+				<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'igoecreative' ), __( '1 Comment', 'igoecreative' ), __( '% Comments', 'igoecreative' )); ?></span>
+			</div>
+		</div>
 
 	</article>
 
